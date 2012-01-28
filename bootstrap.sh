@@ -3,7 +3,7 @@
 set -e
 
 if [ -e /usr/bin/chef-solo ]; then
-  echo chef solo already installed
+  echo `chef-solo -v`
   exit 0
 fi
 
